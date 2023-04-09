@@ -1,0 +1,30 @@
+{
+  "name": "crema-todo",
+  "version": "1.3.1",
+  "description": "A simple to-do app",
+  "author": "Ubeyde Emir Özdemir",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ubeydeozdmr/crema-todo.git"
+  },
+  "keywords": [
+    "todo",
+    "to-do"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.1.2"
+  }
+}
