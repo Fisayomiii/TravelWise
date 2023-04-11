@@ -38,7 +38,7 @@
                         <div class="flex text-left">
                             <div
                                 class="mr-3 flex items-center justify-center w-5 h-5 text-black transition duration-300 transform rounded-full">
-                                <img src="../assets/illustrations/Calendar.png" alt="Location" />
+                                <img src="../assets/illustrations/Calendar.png" alt="calender" />
                             </div>
                             <div class="flex flex-col">
 
@@ -49,8 +49,8 @@
                             </div>
                         </div>
                         <div
-                            class="ml-20 flex items-center justify-center w-10 h-10 text-black transition duration-300 transform rounded-full bg-[#F43F5E]">
-                            <img src="../assets/illustrations/Search.png" class="w-5 h-5" alt="Location" />
+                            class="ml-10 flex items-center justify-center w-10 h-10 text-black transition duration-300 transform rounded-full bg-[#F43F5E]">
+                            <img src="../assets/illustrations/Search.png" class="w-5 h-5" alt="Search" />
                         </div>
                     </div>
 
