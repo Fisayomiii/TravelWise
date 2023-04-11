@@ -18,7 +18,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "vue-carousel": "^0.18.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",

@@ -1,6 +1,6 @@
 <template>
 	<nav class="relative py-6 flex justify-between items-center bg-white">
-		<a class="text-3xl font-bold leading-none" href="#/">
+		<a class="text-3xl font-bold leading-none" href="/">
 			<img src="../assets/illustrations/Logo.png" class="h-8" alt="">
 		</a>
 		<div class="lg:hidden">
@@ -35,18 +35,22 @@
 	</nav>
 
 	<div class="relative z-50" :class="showMenu ? 'flex' : 'hidden'">
-		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+		<div class="inset-0 fixed bg-gray-800 opacity-25"></div>
 		<nav class="fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-5 bg-white border-r overflow-y-auto">
 			<div class="flex items-center mb-8">
-
-				<button class="navbar-close" @click="showMenu = !showMenu">
+				<button @click="showMenu = !showMenu">
 					<svg class="h-6 w-6 text-[#EF1B48] cursor-pointer hover:text-[#EF1B45]"
 						xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
 						</path>
 					</svg>
 				</button>
+
+				<a class="text-3xl ml-3 font-bold leading-none" href="/">
+					<img src="../assets/illustrations/Logo.png" class="h-8" alt="">
+				</a>
 			</div>
+
 			<div>
 				<ul>
 					<li class="mb-1">
@@ -75,7 +79,8 @@
 						href="/">Sign Up</a>
 				</div>
 				<p class="my-4 text-xs text-center text-gray-400">
-					<span>Copyright © <a href="https://github.com/Fisayomiii" target="_blank" rel="noopener noreferrer">Fisayomiii</a></span>
+					<span>Copyright © <a href="https://github.com/Fisayomiii" target="_blank"
+							rel="noopener noreferrer">Fisayomiii</a></span>
 				</p>
 			</div>
 		</nav>
