@@ -1,12 +1,11 @@
 <template>
-    <section class="relative flex items-center w-full bg-[#F9F9F9] mt-5">
+    <section class="relative flex items-center w-full bg-[#F9F9F9] sm:mb-52">
         <div class="relative items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
             <div class="relative flex-col items-start m-auto align-middle">
                 <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
                     <div class="relative items-center gap-12 m-auto lg:inline-flex">
                         <div class="max-w-xl text-center lg:text-left">
                             <div>
-
                                 <p class="text-2xl font-bold tracking-tight text-black sm:text-4xl">
                                     Travel and experience seamless experience with us
                                 </p>
@@ -32,5 +31,5 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section><br>
 </template>

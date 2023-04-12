@@ -1,13 +1,13 @@
 <template>
     <!-- <body class="px-5 sm:px-44"> -->
-    <div class="px-5 sm:px-44">
+    <div class="px-5 sm:px-16 lg:px-44">
         <Header />
 
         <div
             class="mt-5 sm:mt-20 px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div class="flex flex-col items-center justify-between lg:flex-row">
                 <div class="mb-10 lg:max-w-lg lg:pr-5 lg:mb-0">
-                    <div class="max-w-xl mb-6 ">
+                    <div class="max-w-xl mb-6">
                         <h2
                             class="max-w-lg mb-6 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
                             The world is waiting for you to explore it
@@ -72,7 +72,7 @@
                     </div>
                 </div>
 
-                <div class="relative lg:w-1/2">
+                <div class="relative lg:w-1/2 px-28">
                     <div class="hidden lg:flex gap-2 ">
                         <img class="object-fit h-56 mt-52" src="../assets/illustrations/hero1.png" alt="hero1 img" />
                         <img class="object-fit h-96" src="../assets/illustrations/hero2.png" alt="hero2 img" />

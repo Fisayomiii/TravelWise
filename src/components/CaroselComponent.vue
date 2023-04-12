@@ -1,125 +1,213 @@
 <template>
     <div class="bg-[#F9F9F9]">
-        <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-            <div class="max-w-screen-sm sm:text-center sm:mx-auto text-center lg:text-left">
+        <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-1">
+
+            <div class="max-w-screen-sm sm:text-center sm:mx-auto text-center">
                 <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none gradient-underline">
                     Popular locations
                 </h2><br><br>
-                <p class="text-base text-gray-700 md:text-lg sm:px-4">
-                    There are many packages more than you needed just to make sure <br> that you get enough options to avail
+                <p class="text-base text-gray-700 md:text-lg sm:px-4 mt-2">
+                    There are many packages more than you needed just to make sure that you get enough options to avail
                     the best one
                 </p>
             </div>
-            <!-- <div class="flex mt-4">
-                <button @click="prevCard"
-                    class="flex-shrink-0 w-12 h-12 bg-gray-300 text-gray-700 text-xl font-bold rounded-full shadow-md mr-4">
-                    &lt;
-                </button>
-                <button @click="nextCard"
-                    class="flex-shrink-0 w-12 h-12 bg-gray-300 text-gray-700 text-xl font-bold rounded-full shadow-md">
-                    &gt;
-                </button>
-            </div> -->
-            <!-- <div class="flex overflow-x-auto">
-                <div class="flex transition-transform duration-300 ease-in-out"
-                    :style="`transform: translateX(${translateX}px)`">
-                    <div class="flex-shrink-0 w-96 bg-gray-100 p-1 m-2">
-                        <a href="#" class="group">
-                            <div
-                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-                                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg"
-                                    alt="Hand holding black machined steel mechanical pencil with brass tip and top."
-                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
-                            </div>
-                            <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
-                            <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
-                        </a>
-                    </div>
-                    <div class="flex-shrink-0 w-96 bg-gray-100 p-1 m-2">
-                        <a href="#" class="group">
-                            <div
-                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-                                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg"
-                                    alt="Hand holding black machined steel mechanical pencil with brass tip and top."
-                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
-                            </div>
-                            <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
-                            <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
-                        </a>
-                    </div>
-                    <div class="flex-shrink-0 w-96 bg-gray-100 p-1 m-2">
-                        <a href="#" class="group">
-                            <div
-                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-                                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg"
-                                    alt="Hand holding black machined steel mechanical pencil with brass tip and top."
-                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
-                            </div>
-                            <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
-                            <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
-                        </a>
-                    </div>
-                    <div class="flex-shrink-0 w-96 bg-gray-100 p-1 m-2">
-                        <a href="#" class="group">
-                            <div
-                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-                                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg"
-                                    alt="Hand holding black machined steel mechanical pencil with brass tip and top."
-                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
-                            </div>
-                            <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
-                            <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
-                        </a>
-                    </div>
-                </div>
-            </div> -->
+            <div class="flex overflow-x-auto">
+                <div class="flex transition-transform duration-300 ease-in-out gap-6" ref="carousel">
 
+                    <div class="max-w-sm max-h-fit bg-white shawdow-lg w-96 px-6 pt-6 pb-2 rounded-xl dark:bg-zinc-800">
+                        <div class="relative overflow-hidden group rounded-xl">
+                            <img class="object-cover rounded-xl h-64 w-full transition duration-500 ease-in-out transform group-hover:scale-105"
+                                src="../assets/illustrations/illustrationcard1.png" alt="illustrationimg1" />
+                            <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                            </div>
+                        </div>
+                        <div class="mt-4 mb-5 flex justify-between">
+                            <div>
+                                <h3 class="text-sm text-gray-700">
+                                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight dark:text-white">
+                                        Mountain Hiking Tour
+                                    </h5>
+                                </h3>
+                            </div>
+                            <p class="mr-4 text-md font-medium text-amber-400 flex gap-1">4.5 <img
+                                    src="../assets/illustrations/Star.png" class="h-5" alt="star"></p>
+                        </div>
+                        <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">Himalayas , Hawaii
+                        </p>
+                        <div class="mt-4 mb-5 flex justify-between">
+                            <div>
+                                <h3 class="text-sm text-gray-700">
+                                    <h5 class="text-gray-400 font-bold text-1xl tracking-tight dark:text-white">
+                                        <span class="text-[#EF1B48] text-2xl">$1,000</span>/person
+                                    </h5>
+                                </h3>
+                            </div>
+                            <button
+                                class="hidden lg:inline-block py-3 px-6 bg-[#EF1B48] hover:bg-rose-500 active:bg-rose-300 focus:outline-none focus:ring focus:ring-rose-300 text-sm text-white font-bold rounded-full transition duration-200 transition ease-in-out delay-150 hover:scale-110 duration-300">Book
+                                now
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="max-w-sm max-h-fit bg-white shawdow-lg w-96 px-6 pt-6 pb-2 rounded-xl dark:bg-zinc-800">
+                        <div class="relative overflow-hidden group rounded-xl">
+                            <img class="object-cover rounded-xl h-64 w-full transition duration-500 ease-in-out transform group-hover:scale-105"
+                                src="../assets/illustrations/illustrationcard2.png" alt="illustrationimg2" />
+                            <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                            </div>
+                        </div>
+                        <div class="mt-4 mb-5 flex justify-between">
+                            <div>
+                                <h3 class="text-sm text-gray-700">
+                                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight dark:text-white">
+                                        Mountain Hiking Tour
+                                    </h5>
+                                </h3>
+                            </div>
+                            <p class="mr-4 text-md font-medium text-amber-400 flex gap-1">4.5 <img
+                                    src="../assets/illustrations/Star.png" class="h-5" alt="star"></p>
+                        </div>
+                        <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">Himalayas , Hawaii
+                        </p>
+                        <div class="mt-4 mb-5 flex justify-between">
+                            <div>
+                                <h3 class="text-sm text-gray-700">
+                                    <h5 class="text-gray-400 font-bold text-1xl tracking-tight dark:text-white">
+                                        <span class="text-[#EF1B48] text-2xl">$1,000</span>/person
+                                    </h5>
+                                </h3>
+                            </div>
+                            <button
+                                class="hidden lg:inline-block py-3 px-6 bg-[#EF1B48] hover:bg-rose-500 active:bg-rose-300 focus:outline-none focus:ring focus:ring-rose-300 text-sm text-white font-bold rounded-full transition duration-200 transition ease-in-out delay-150 hover:scale-110 duration-300">Book
+                                now
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="max-w-sm max-h-fit bg-white shawdow-lg w-96 px-6 pt-6 pb-2 rounded-xl dark:bg-zinc-800">
+                        <div class="relative overflow-hidden group rounded-xl">
+                            <img class="object-cover rounded-xl h-64 w-full transition duration-500 ease-in-out transform group-hover:scale-105"
+                                src="../assets/illustrations/illustrationcard3.png" alt="illustrationimg3" />
+                            <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                            </div>
+                        </div>
+                        <div class="mt-4 mb-5 flex justify-between">
+                            <div>
+                                <h3 class="text-sm text-gray-700">
+                                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight dark:text-white">
+                                        Mountain Hiking Tour
+                                    </h5>
+                                </h3>
+                            </div>
+                            <p class="mr-4 text-md font-medium text-amber-400 flex gap-1">4.5 <img
+                                    src="../assets/illustrations/Star.png" class="h-5" alt="star"></p>
+                        </div>
+                        <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">Himalayas , Hawaii
+                        </p>
+                        <div class="mt-4 mb-5 flex justify-between">
+                            <div>
+                                <h3 class="text-sm text-gray-700">
+                                    <h5 class="text-gray-400 font-bold text-1xl tracking-tight dark:text-white">
+                                        <span class="text-[#EF1B48] text-2xl">$1,000</span>/person
+                                    </h5>
+                                </h3>
+                            </div>
+                            <button
+                                class="hidden lg:inline-block py-3 px-6 bg-[#EF1B48] hover:bg-rose-500 active:bg-rose-300 focus:outline-none focus:ring focus:ring-rose-300 text-sm text-white font-bold rounded-full transition duration-200 transition ease-in-out delay-150 hover:scale-110 duration-300">Book
+                                now
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="max-w-sm max-h-fit bg-white shawdow-lg w-96 px-6 pt-6 pb-2 rounded-xl dark:bg-zinc-800">
+                        <div class="relative overflow-hidden group rounded-xl">
+                            <img class="object-cover rounded-xl h-64 w-full transition duration-500 ease-in-out transform group-hover:scale-105"
+                                src="../assets/illustrations/illustrationcard4.png" alt="illustrationimg4" />
+                            <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity">
+                            </div>
+                        </div>
+                        <div class="mt-4 mb-5 flex justify-between">
+                            <div>
+                                <h3 class="text-sm text-gray-700">
+                                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight dark:text-white">
+                                        Mountain Hiking Tour
+                                    </h5>
+                                </h3>
+                            </div>
+                            <p class="mr-4 text-md font-medium text-amber-400 flex gap-1">4.5 <img
+                                    src="../assets/illustrations/Star.png" class="h-5" alt="star"></p>
+                        </div>
+                        <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">Himalayas , Hawaii
+                        </p>
+                        <div class="mt-4 mb-5 flex justify-between">
+                            <div>
+                                <h3 class="text-sm text-gray-700">
+                                    <h5 class="text-gray-400 font-bold text-1xl tracking-tight dark:text-white">
+                                        <span class="text-[#EF1B48] text-2xl">$1,000</span>/person
+                                    </h5>
+                                </h3>
+                            </div>
+                            <button
+                                class="hidden lg:inline-block py-3 px-6 bg-[#EF1B48] hover:bg-rose-500 active:bg-rose-300 focus:outline-none focus:ring focus:ring-rose-300 text-sm text-white font-bold rounded-full transition duration-200 transition ease-in-out delay-150 hover:scale-110 duration-300">Book
+                                now
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+                <div class="flex justify-center mt-6">
+                    <!-- button  -->
+                    <button @click="previous"
+                        class="flex-shrink-0 w-11 h-11 active:bg-[#F43F5E] hover:bg-rose-500 active:bg-rose-300 outline-none ring ring-rose-300 font-bold rounded-full transition duration-200 transition ease-in-out delay-150 hover:scale-110 text-gray-900 text-xl font-bold rounded-full shadow-md mr-4">
+                        &lt;
+                    </button>
+                    <button @click="next"
+                        class="flex-shrink-0 w-11 h-11 hover:bg-rose-500 active:bg-rose-300 focus:outline-none ring ring-rose-300 font-bold rounded-full transition duration-200 transition ease-in-out delay-150 hover:scale-110 text-gray-900 text-xl font-bold rounded-full shadow-md">
+                        &gt;
+                    </button>
+                </div>
         </div>
         <Newsletter />
 
     </div>
 </template>
-<!-- <div class="mt-4 flex justify-between">
-    <div>
-        <h3 class="text-sm text-gray-700">
-            <a :href="product.href">
-                <span aria-hidden="true" class="absolute inset-0" />
-                {{ product.name }}
-            </a>
-        </h3>
-        <p class="mt-1 text-sm text-gray-500">{{ product.color }}</p>
-    </div>
-    <p class="text-sm font-medium text-gray-900">{{ product.price }}</p>
-</div> -->
-  
+
+
 <script>
+import Newsletter from "./NewsletterComponent.vue";
+
 export default {
     components: { Newsletter },
 
     data() {
         return {
-            translateX: 90, // Initial translateX value
-            cardWidth: 64, // Width of each card
-            numCards: 50, // Number of cards in the carousel
-            numVisibleCards: 30, // Number of visible cards at a time
+            currentIndex: 0,
+            cardWidth: 0,
+            carouselWidth: 0,
         };
     },
-    methods: {
-        nextCard() {
-            // Move carousel to the right
-            if (this.translateX > -(this.cardWidth * (this.numCards - this.numVisibleCards))) {
-                this.translateX -= this.cardWidth;
-            }
-        },
-        prevCard() {
-            // Move carousel to the left
-            if (this.translateX < 0) {
-                this.translateX += this.cardWidth;
-            }
-        },
+    mounted() {
+        this.cardWidth = this.$refs.carousel.children[0].offsetWidth;
+        this.carouselWidth = this.$refs.carousel.offsetWidth;
     },
+    methods: {
+        next() {
+            if (this.currentIndex < 3) {
+                this.currentIndex++;
+                this.$refs.carousel.style.transform = `translateX(-${this.cardWidth * this.currentIndex
+                    }px)`;
+            }
+        },
+        previous() {
+            if (this.currentIndex > 0) {
+                this.currentIndex--;
+                this.$refs.carousel.style.transform = `translateX(-${this.cardWidth * this.currentIndex
+                    }px)`;
+            }
+        }
+    }
 };
-
-import Newsletter from "./NewsletterComponent.vue";
-
 </script>

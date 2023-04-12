@@ -24,3 +24,11 @@
   background-size: 60%;
   background-repeat: no-repeat;
 }
+
+.mt{
+  margin-top: -10em;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

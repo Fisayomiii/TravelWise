@@ -1,6 +1,6 @@
 <template>
     <section class="relative flex items-center w-full bg-white">
-        <div class="relative items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
+        <div class="relative items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl mt">
             <div class="relative flex-col items-start m-auto align-middle">
                 <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
                     <div class="relative items-center gap-12 m-auto lg:inline-flex md:order-first">
@@ -11,7 +11,9 @@
                                     Our stories have adventures and you can explore them all!
                                 </p>
                                 <p class="max-w-xl mt-4 text-base tracking-tight text-gray-600">
-                                    We are experienced in bringing adventures to stay their journey, with all outdoor destinations in the world as our specialties. Start your adventure now! Nature has already called you!
+                                    We are experienced in bringing adventures to stay their journey, with all outdoor
+                                    destinations in the world as our specialties. Start your adventure now! Nature has
+                                    already called you!
                                 </p>
                             </div>
                             <div class="flex justify-center gap-3 mt-10 lg:justify-start">
@@ -24,11 +26,11 @@
                         </div>
                     </div>
                     <div class="order-first block w-full aspect-square ">
-                        
                         <img class="object-cover object-center w-full mx-auto lg:ml-auto mt-44 sm:mt-24" alt="hero"
                             src="../assets/illustrations/map.png">
                     </div>
                 </div>
+            </div>
         </div>
-    </div>
-</section></template>
+    </section>
+</template>
