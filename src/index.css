@@ -10,6 +10,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+::selection{
+  background-color: #e75a78;
+}
+
 .gradient-underline {
   display: inline-block;
   overflow: visible;
@@ -32,3 +36,4 @@
 ::-webkit-scrollbar {
   display: none;
 }
+

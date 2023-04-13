@@ -43,7 +43,7 @@
                                 </h3>
                             </div>
                             <button
-                                class="hidden lg:inline-block py-3 px-6 bg-[#EF1B48] hover:bg-rose-500 active:bg-rose-300 focus:outline-none focus:ring focus:ring-rose-300 text-sm text-white font-bold rounded-full transition duration-200 transition ease-in-out delay-150 hover:scale-110 duration-300">Book
+                                class="inline-block py-3 px-6 bg-[#EF1B48] hover:bg-rose-500 active:bg-rose-300 focus:outline-none focus:ring focus:ring-rose-300 text-sm text-white font-bold rounded-full transition duration-200 transition ease-in-out delay-150 hover:scale-110 duration-300">Book
                                 now
                             </button>
                         </div>
@@ -78,7 +78,7 @@
                                 </h3>
                             </div>
                             <button
-                                class="hidden lg:inline-block py-3 px-6 bg-[#EF1B48] hover:bg-rose-500 active:bg-rose-300 focus:outline-none focus:ring focus:ring-rose-300 text-sm text-white font-bold rounded-full transition duration-200 transition ease-in-out delay-150 hover:scale-110 duration-300">Book
+                                class="py-3 px-6 bg-[#EF1B48] hover:bg-rose-500 active:bg-rose-300 focus:outline-none focus:ring focus:ring-rose-300 text-sm text-white font-bold rounded-full transition duration-200 transition ease-in-out delay-150 hover:scale-110 duration-300">Book
                                 now
                             </button>
                         </div>
@@ -113,7 +113,7 @@
                                 </h3>
                             </div>
                             <button
-                                class="hidden lg:inline-block py-3 px-6 bg-[#EF1B48] hover:bg-rose-500 active:bg-rose-300 focus:outline-none focus:ring focus:ring-rose-300 text-sm text-white font-bold rounded-full transition duration-200 transition ease-in-out delay-150 hover:scale-110 duration-300">Book
+                                class=" py-3 px-6 bg-[#EF1B48] hover:bg-rose-500 active:bg-rose-300 focus:outline-none focus:ring focus:ring-rose-300 text-sm text-white font-bold rounded-full transition duration-200 transition ease-in-out delay-150 hover:scale-110 duration-300">Book
                                 now
                             </button>
                         </div>
@@ -148,7 +148,7 @@
                                 </h3>
                             </div>
                             <button
-                                class="hidden lg:inline-block py-3 px-6 bg-[#EF1B48] hover:bg-rose-500 active:bg-rose-300 focus:outline-none focus:ring focus:ring-rose-300 text-sm text-white font-bold rounded-full transition duration-200 transition ease-in-out delay-150 hover:scale-110 duration-300">Book
+                                class=" py-3 px-6 bg-[#EF1B48] hover:bg-rose-500 active:bg-rose-300 focus:outline-none focus:ring focus:ring-rose-300 text-sm text-white font-bold rounded-full transition duration-200 transition ease-in-out delay-150 hover:scale-110 duration-300">Book
                                 now
                             </button>
                         </div>

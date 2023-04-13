@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Fisayomi/travelwise"
+    "url": "https://github.com/Fisayomiii/travelwise"
   },
   "keywords": [
     "website",
@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "vue": "^3.2.47",
-    "vue-carousel": "^0.18.0"
+    "vue-sweetalert2": "^5.0.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
