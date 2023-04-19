@@ -6,16 +6,16 @@
             <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
                 <div class="relative items-center gap-12 m-auto lg:inline-flex text-center lg:text-left">
                     <div class="max-w-xl lg:max-w-lg ">
-                        <p class="text-2xl font-bold tracking-tight text-black sm:text-4xl">
+                        <p class="text-2xl font-bold tracking-tight text-black sm:text-4xl" v-motion-slide-visible-once-bottom>
                             Subscribe to our Newsletter.
                         </p>
-                        <p class="max-w-xl mt-4 text-base tracking-tight text-gray-600">
+                        <p class="max-w-xl mt-4 text-base tracking-tight text-gray-600" v-motion-slide-visible-once-bottom>
                             Receive latest news, update, and many other
                             things every week.
                         </p>
                         <!-- <center> -->
                             <form @submit.prevent="onSubmitHandler"
-                                class="mt-6 flex flex-wrap max-w-md ">
+                                class="mt-6 flex flex-wrap max-w-md " v-motion-slide-visible-once-bottom>
                                 <input id="email" type="email" v-model="email" autocomplete="email"
                                     class="min-w-0 flex-auto rounded-md border-0 bg-white px-3.5 py-2 text-white shadow-sm bg-[#EF1B48]  focus:outline-none focus:ring focus:ring-rose-300 text-sm text-white font-bold rounded-full transition duration-200 transition ease-in-out delay-150 duration-300 sm:text-sm sm:leading-6"
                                     placeholder="Enter your email" />
@@ -26,7 +26,7 @@
                         <br>
                     </div>
                 </div>
-                <div class="order-first block w-full aspect-square lg:mt-0 lg:order-first">
+                <div class="order-first block w-full aspect-square lg:mt-0 lg:order-first" v-motion-pop-visible-once>
                     <img class="object-fit object-center" alt="hero" src="../assets/illustrations/illustration.png">
                 </div>
             </div>

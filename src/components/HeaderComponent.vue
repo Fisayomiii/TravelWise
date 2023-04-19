@@ -1,5 +1,5 @@
 <template>
-	<nav class="relative py-6 flex justify-between items-center bg-white">
+	<nav ref="head" class="relative py-6 flex justify-between items-center bg-white">
 		<a class="text-3xl font-bold leading-none" href="/">
 			<img src="../assets/illustrations/Logo.png" class="h-8" alt="">
 		</a>
@@ -12,7 +12,7 @@
 			</button>
 		</div>
 		<ul
-			class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-12">
+			class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto xl:flex lg:items-center lg:w-auto lg:space-x-12">
 			<li>
 				<a class="text-sm text-gray-900 font-bold hover:text-gray-500 transition-all" href="/">Home</a>
 			</li>
@@ -53,19 +53,19 @@
 
 			<div>
 				<ul>
-					<li class="mb-1">
+					<li class="mb-1" v-motion-slide-visible-once-bottom>
 						<a class="block p-4 text-sm font-semibold text-gray-900 hover:bg-rose-50 hover:text-rose-600 rounded"
 							href="/">Home</a>
 					</li>
-					<li class="mb-1">
+					<li class="mb-1" v-motion-slide-visible-once-bottom>
 						<a class="block p-4 text-sm font-semibold text-gray-900 hover:bg-rose-50 hover:text-rose-600 rounded"
 							href="/">Listing</a>
 					</li>
-					<li class="mb-1">
+					<li class="mb-1" v-motion-slide-visible-once-bottom>
 						<a class="block p-4 text-sm font-semibold text-gray-900 hover:bg-rose-50 hover:text-rose-600 rounded"
 							href="/">Pages</a>
 					</li>
-					<li class="mb-1">
+					<li class="mb-1" v-motion-slide-visible-once-bottom>
 						<a class="block p-4 text-sm font-semibold text-gray-900 hover:bg-rose-50 hover:text-rose-600 rounded"
 							href="/">Contact Us</a>
 					</li>
@@ -74,9 +74,9 @@
 			<div class="mt-auto">
 				<div class="pt-6">
 					<a class="block px-4 py-4 mb-3 leading-loose text-xs text-center font-semibold leading-none border-0 ring-2 ring-inset ring-[#EF1B41] active:bg-rose-300 focus:outline-none focus:ring focus:ring-rose-300 transition duration-200 transition ease-in-out delay-150 hover:scale-105 duration-300 rounded-full"
-						href="/">Log in</a>
+						href="/" v-motion-pop-visible-once>Log in</a>
 					<a class="block px-4 py-3 mb-2 leading-loose text-xs text-center font-semibold bg-[#EF1B48] hover:bg-rose-500 active:bg-rose-300 focus:outline-none focus:ring focus:ring-rose-300 text-sm font-bold rounded-full transition duration-200 transition ease-in-out delay-150 hover:scale-105 duration-300"
-						href="/">Sign Up</a>
+						href="/" v-motion-pop-visible-once>Sign Up</a>
 				</div>
 				<p class="my-4 text-xs text-center text-gray-400">
 					<span>Copyright © <a href="https://github.com/Fisayomiii" target="_blank"
@@ -89,11 +89,24 @@
 
 
 <script>
+import { Power3, gsap } from 'gsap/all';
 export default {
 	data() {
 		return {
 			showMenu: false,
 		};
+	},
+	mounted() {
+		this.startAnimation();
+	},
+	methods: {
+		startAnimation() {
+			gsap.fromTo(
+				this.$refs.head, // Target element
+				{ opacity: 0, y: -60 }, // From properties
+				{ opacity: 1, y: 0, duration: 1, ease: Power3.easeOut, delay: 1.8 }
+			);
+		},
 	},
 };
 </script>

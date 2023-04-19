@@ -7,16 +7,16 @@
                         <div class="max-w-xl text-center lg:text-left">
                             <div>
 
-                                <p class="text-2xl font-bold tracking-tight text-black sm:text-4xl">
+                                <p class="text-2xl font-bold tracking-tight text-black sm:text-4xl" v-motion-slide-visible-once-bottom>
                                     Our stories have adventures and you can explore them all!
                                 </p>
-                                <p class="max-w-xl mt-4 text-base tracking-tight text-gray-600">
+                                <p class="max-w-xl mt-4 text-base tracking-tight text-gray-600" v-motion-slide-visible-once-bottom>
                                     We are experienced in bringing adventures to stay their journey, with all outdoor
                                     destinations in the world as our specialties. Start your adventure now! Nature has
                                     already called you!
                                 </p>
                             </div>
-                            <div class="flex justify-center gap-3 mt-10 lg:justify-start">
+                            <div class="flex justify-center gap-3 mt-10 lg:justify-start" v-motion-slide-visible-once-bottom>
                                 <button>
                                     <a class="hidden lg:inline-block py-4 px-9 bg-[#EF1B48] hover:bg-rose-500 active:bg-rose-300 focus:outline-none focus:ring focus:ring-rose-300 text-sm text-white font-bold rounded-full transition duration-200 transition ease-in-out delay-150 hover:scale-110 duration-300"
                                         href="/">Get Started
@@ -25,7 +25,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="order-first block w-full aspect-square ">
+                    <div class="order-first block w-full aspect-square" v-motion-pop-visible-once>
                         <img class="object-cover object-center w-full mx-auto lg:ml-auto mt-44 sm:mt-24" alt="hero"
                             src="../assets/illustrations/map.png">
                     </div>

@@ -3,16 +3,16 @@
         <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-1">
 
             <div class="max-w-screen-sm sm:text-center sm:mx-auto text-center">
-                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none gradient-underline">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none gradient-underline" v-motion-slide-visible-once-bottom>
                     Popular locations
                 </h2><br><br>
-                <p class="text-base text-gray-700 md:text-lg sm:px-4 mt-2">
+                <p class="text-base text-gray-700 md:text-lg sm:px-4 mt-2" v-motion-slide-visible-once-bottom>
                     There are many packages more than you needed just to make sure that you get enough options to avail
                     the best one
                 </p>
             </div>
             <div class="flex overflow-x-auto">
-                <div class="flex transition-transform duration-300 ease-in-out gap-6" ref="carousel">
+                <div class="flex transition-transform duration-300 ease-in-out gap-6" ref="carousel" v-motion-slide-visible-once-right>
 
                     <div class="max-w-sm max-h-fit bg-white shawdow-lg w-96 px-6 pt-6 pb-2 rounded-xl dark:bg-zinc-800">
                         <div class="relative overflow-hidden group rounded-xl">

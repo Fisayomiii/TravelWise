@@ -8,9 +8,10 @@
   margin: 0;
   /* border: 1px solid #ff0000; */
   font-family: "Poppins", sans-serif;
+  /* visibility: hidden; */
 }
 
-::selection{
+::selection {
   background-color: #e75a78;
 }
 
@@ -29,11 +30,10 @@
   background-repeat: no-repeat;
 }
 
-.mt{
+.mt {
   margin-top: -10em;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
-

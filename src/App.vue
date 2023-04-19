@@ -7,6 +7,7 @@
 
 <script>
 import Hero from "./components/HeroComponent.vue";
+
 export default {
   components: { Hero },
   data() {
